@@ -1,9 +1,158 @@
-<html>
- 
-<body>
-  <h1>JOSE AKLE</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" 
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3cb0e18d54.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./resources/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./resources/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./resources/css/styles.css" type="text/css" />
+    <script src="./resources/js/main.js" defer></script>
+    <title>Personal Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <img src="./resources/images/pw-logo.png" alt="logo" width="50px" height="50px">
+      <span class="material-symbols-outlined bars">menu</span>
+      <nav id="navbar" style="display: none;">
+        <ul role="presentation">
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1 id="title">Hey,<br> I am <br>Jose Akle</h1>
+        <h2>Full-Stack Sofware Engineering Student</h2>
+      </section>
+      <section id="projects">  
+        <h2><span>Projects</span></h2>
+        <hr>
+        <section id="projects-options">
+          <button id="show-all-btn">Show All</button>
+          <button id="presentation-btn">Presentation</button>
+        </section>
+        <section id="projects-showcase">
+          <span class="material-symbols-outlined less-than">chevron_left</span>
+          <section class="project-link">
+            <a href="https://codepen.io/joseakle/full/WNzgEvr" target="_blank">
+              <div class="project-tile">
+                <img
+                  src="https://i.postimg.cc/Y92k5fWx/tribute-page-screenshot.png"
+                  alt="Nikola-Tesla-Trubute-page"
+                  class="preview"
+                />
+              </div>
+            </a>
+            <h3 aria-label="project title">Tribute Page</h3>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+          <section class="project-link" style="display: none;">
+            <a href="https://codepen.io/joseakle/full/ZExMJRx" target="_blank">
+              <div class="project-tile">
+                <img
+                  src="https://i.postimg.cc/YSWm47nP/survey-form-screenshot.png"
+                  alt=""
+                  class="preview"
+                />
+              </div>
+            </a>
+            <h3 aria-label="project title">Survey Form</h3>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+          <section class="project-link" style="display: none;">
+            <a href="https://codepen.io/joseakle/full/WNzgEPO" target="_blank">
+              <div class="project-tile">
+                <img
+                  src="https://i.postimg.cc/NGrPg2k8/product-landing-page-screenshot.png"
+                  alt=""
+                  class="preview"
+                />
+              </div>
+            </a>
+            <h3 aria-label="project title">Product Landing Page</h3>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+          <section class="project-link" style="display: none;">
+            <a href="https://codepen.io/joseakle/full/YzaOxoX" target="_blank">
+              <div class="project-tile">
+                <img
+                  src="https://i.postimg.cc/BQL7nL5c/technical-documentation-screenshot.png"
+                  alt=""
+                  class="preview"
+                />
+              </div>
+            </a>
+            <h3 aria-label="project title">Technical Documentation</h3>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+          <span class="material-symbols-outlined greater-than">chevron_right</span>
+        </section>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-items">
+          <i class="fa-brands fa-html5" title="HTML"></i> 
+          <i class="fa-brands fa-css3-alt" title="CSS"></i>
+          <i class="fa-brands fa-square-js" title="JavaScript"></i>
+          <i class="fa-brands fa-git" title="Git"></i>
+          <i class="fa-brands fa-github" title="GitHub"></i>
+          <i class="fa-solid fa-terminal" title="Command Line"></i> 
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>© 2022 by Jose Akle</p>
+    </footer>
+  </body>
 </html>
